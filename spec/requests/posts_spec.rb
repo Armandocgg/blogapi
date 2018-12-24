@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Posts Endpoint", type: :request do
 
-  describe "GET /post" do     
+  describe "GET /posts" do     
     it "should return OK" do
       get '/posts'
       payload = JSON.parse(response.body)
